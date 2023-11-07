@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100, 300, 400, 500, 600, 700, 800, 900&display=swap');
+
+:root {
+
+  
+	--gold-crayola: hsl(38, 61%, 73%);
+	--quick-silver: hsla(0, 0%, 65%, 1);
+	--davys-grey: hsla(30, 3%, 34%, 1);
+	--smoky-black-1: hsla(40, 12%, 5%, 1);
+	--smoky-black-2: hsla(30, 8%, 5%, 1);
+	--smoky-black-3: hsla(0, 3%, 7%, 1);
+	--eerie-black-1: hsla(210, 4%, 9%, 1);
+	--eerie-black-2: hsla(210, 4%, 11%, 1);
+	--eerie-black-3: hsla(180, 2%, 8%, 1);
+	--eerie-black-4: hsla(0, 0%, 13%, 1);
+	--white: hsla(0, 0%, 100%, 1);
+	--white-alpha-20: hsla(0, 0%, 100%, 0.2);
+	--white-alpha-10: hsla(0, 0%, 100%, 0.1);
+	--black: hsla(0, 0%, 0%, 1);
+	--black-alpha-80: hsla(0, 0%, 0%, 0.8);
+	--black-alpha-15: hsla(0, 0%, 0%, 0.15);
+  
+  
+	--loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%,  transparent 66.66% 75%);
+	--gradient-1: linear-gradient(to top,hsla(0, 0%, 0%, 0.9),hsla(0, 0%, 0%, 0.7),transparent);
+  
+
+	--fontFamily-forum: 'Forum', cursive;
+	--fontFamily-dm_sans: 'DM Sans', sans-serif;
+  
+
+	--fontSize-display-1: calc(1.3rem + 6.7vw);
+	--fontSize-headline-1: calc(2rem + 2.5vw);
+	--fontSize-headline-2: calc(1.3rem + 2.4vw);
+	--fontSize-title-1: calc(1.6rem + 1.2vw);
+	--fontSize-title-2: 2.2rem;
+	--fontSize-title-3: 2.1rem;
+	--fontSize-title-4: calc(1.6rem + 1.2vw);
+	--fontSize-body-1: 2.4rem;
+	--fontSize-body-2: 1.6rem;
+	--fontSize-body-3: 1.8rem;
+	--fontSize-body-4: 1.6rem;
+	--fontSize-label-1: 1.4rem;
+	--fontSize-label-2: 1.2rem;
+  
+	--weight-regular: 400;
+	--weight-bold: 700;
+
+	--lineHeight-1: 1em;
+	--lineHeight-2: 1.2em;
+	--lineHeight-3: 1.5em;
+	--lineHeight-4: 1.6em;
+	--lineHeight-5: 1.85em;
+	--lineHeight-6: 1.4em;
+  
+	--letterSpacing-1: 0.15em;
+	--letterSpacing-2: 0.4em;
+	--letterSpacing-3: 0.2em;
+	--letterSpacing-4: 0.3em;
+	--letterSpacing-5: 3px;
+
+  
+	--section-space: 70px;
+  
+
+	--shadow-1: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
+
+	--radius-24: 24px;
+	--radius-circle: 50%;
+  
+	--transition-1: 250ms ease;
+	--transition-2: 500ms ease;
+	--transition-3: 1000ms ease;
+  
+  }
+
+.bg-image {
+	/* The image used */
+	background-image: url(img/hero-slider-1.jpg);
+  
+	/* Add the blur effect */
+	filter: blur(2px);
+	-webkit-filter: blur(8px);
+  
+	/* Full height */
+	height: 100%;
+  
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+	color: white;
+	font-weight: bold;
+	border: 3px solid #f1f1f1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+  }
+
+.nav-flex-row {
+	background-color: #E7E7E7;
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	position: absolute;
+	z-index: 100;
+	left: 0;
+	width: 100%;
+	padding: 0;
+}
+
+.nav-flex-row li {
+	text-decoration: none;
+	list-style-type: none;
+	padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+	font-family: 'Big Shoulders Text', cursive;
+	color: #000;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+.nav-flex-row li a:hover{
+	background: #E7E7E7;
+}
+
+.section-intro {
+	height: 000px;
+	background-size: cover;
+	background-image: url(img/menu-1.png);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	filter: blur(2px);
+	-webkit-filter: blur(8px);
+}
+
+.section-intro h1 {
+	text-align: center;
+	color: #000;
+	font-size: 4em;
+	font-weight: 700;
+}
+
+.section-intro header {
+	display: flex;
+	flex: 4;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.link-to-book-wrapper {
+	flex: 1;
+}
+
+.about-section {
+	display: flex;
+	align-items: center;
+	background-color: #f3f3f3c0;
+	padding: 50px 30px;
+}
+
+.link-to-book {
+	color: #ffffff;
+	display: block;
+	border: 2px solid #ffffff;
+	padding: 5px 10px;
+}
+
+a.link-to-book:hover {
+	background-color: #850b0b;
+	color: #95999e;
+	text-decoration: none;
+}
+
+.about-section p,
+.about-section h3 {
+	text-align: center;
+	width: 60%;
+	margin: auto;
+	font-family: 'Big Shoulders Text', cursive;
+	font-size: 1.8em;
+	text-transform: uppercase;
+}
+
+.carousel-inner {
+	height: 700px;
+}
+
+.row-flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-column-form {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 30px 20px;
+}
+
+.btn.btn-primary {
+	font-family: 'Big Shoulders Text', cursive;
+	color: #ffffff;
+	background-color: #95999e;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 5px 10px;
+	letter-spacing: 2px;
+	border: 0;
+}
+
+.btn.btn-primary:hover {
+	background-color: #747474;
+}
+.opening-time,
+.contact-address {
+	flex: 1;
+	margin: 30px 20px;
+	font-size: 1.2em;
+}
+
+.form-group p {
+	font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-address p span {
+	display: block;
+}
+
+@media (min-width:577px) and (max-width: 800px) {
+
+	.section-intro {
+		height: 500px;
+	}
+
+	.about-section p,
+	.about-section h3 {
+		font-size: 20px;
+	}
+
+	.carousel-inner {
+		height: auto;
+	}
+
+	.row-flex {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.menu .section-title { margin-block-end: 40px; }
+
+.menu .grid-list { margin-block-end: 50px; }
+
+.menu-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.hover\:card .card-banner { background-color: var(--gold-crayola); }
+
+.hover\:card .card-banner .img-cover { transition: var(--transition-2); }
+
+.hover\:card:is(:hover, :focus-within) .card-banner .img-cover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.menu-card .card-banner {
+  flex-shrink: 0;
+  border-radius: var(--radius-24);
+}
+
+.menu-card .card-title { transition: var(--transition-1); }
+
+.menu-card .card-title:is(:hover, :focus-visible) { color: var(--gold-crayola); }
+
+.menu-card .badge {
+  background-color: var(--gold-crayola);
+  color: var(--eerie-black-1);
+  font-family: var(--fontFamily-forum);
+  max-width: max-content;
+  line-height: var(--lineHeight-6);
+  text-transform: uppercase;
+  padding-inline: 10px;
+  margin-block-start: 10px;
+}
+
+.menu-card .span {
+  color: var(--gold-crayola);
+  margin-block: 10px;
+}
+
+.menu-card .card-text {
+  color: var(--quick-silver);
+  line-height: var(--lineHeight-4);
+}
+
+.menu-text .span {
+  display: inline-block;
+  color: var(--gold-crayola);
+}
+
+.menu .btn {
+  margin-inline: auto;
+  margin-block-start: 26px;
+}
+
+.menu .shape {
+  display: block;
+  width: 70%;
+}
+
+.menu .shape-2 {
+  top: 0;
+  left: 0;
+}
+
+.menu .shape-3 {
+  bottom: 0;
+  right: 0;
+}
+
+
+.shape {
+	display: none;
+	position: absolute;
+	max-width: max-content;
+	z-index: -1;
+  }
+  
+  .w-100 { width: 100%; }
+  
+  .move-anim { animation: move 5s linear infinite; }
+
+@media screen and (max-width: 576px) {
+	.section-intro {
+		height: 300px;
+	}
+
+	.about-section {
+		padding: 30px;
+	}
+
+	.section-intro h1 {
+		font-size: 2em;
+	}
+
+	.about-section p,
+	.about-section h3 {
+		font-size: 15px;
+	}
+
+	.carousel-inner {
+		height: auto;
+	}
+
+	.row-flex {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.row-flex h3 {
+		font-size: 25px;
+		text-align: center;
+	}
+
+	.form-group p {
+		font-size: 15px;
+	}
+
+	.opening-time p span,
+	.contact-address p span {
+		font-size: 15px;
+		text-align: center;
+	}
+
+}
+
+
+.reservation-form { margin-block-start: 40px; }
+
+.form-text { margin-block-end: 40px; }
+
+.form-text .link {
+  display: inline;
+  color: var(--gold-crayola);
+}
+
+.form-right .body-4 {
+  color: var(--quick-silver);
+  line-height: var(--lineHeight-3);
+}
+
+.form-right .body-4:not(:last-child) { margin-block-end: 25px; }
+
+.form-left,
+.form-right { padding: 40px 20px 30px; }
+
+.input-field[type="date"] {
+  text-transform: uppercase;
+  padding-inline-end: 10px;
+}
+
+.input-field[type="date"]::-webkit-calendar-picker-indicator { opacity: 0; }
